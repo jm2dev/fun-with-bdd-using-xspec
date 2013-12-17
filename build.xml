@@ -6,7 +6,7 @@
 <!--  Tags:                                                                -->
 <!--    Copyright (c) 2008, 2010 Jeni Tennison (see end of file.)          -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<project name="xspec" default="xspec">
+<project name="fun-with-bdd-using-xspec" default="xspec" xmlns:ivy="antlib:org.apache.ivy.ant">
   <description>XSpec is a Behavior Driven Development (BDD) framework for XSLT and XQuery.
 
 Usage:
@@ -57,7 +57,7 @@ where:
       </antcall>
     </sequential>
   </macrodef>
-  <target name="xspec" description="Runs the XSpec unit tests in ${xspec.xml}">
+  <target name="xspec" description="--> Runs the XSpec unit tests in ${xspec.xml}">
     <xslt in="${xspec.xml}" out="${xspec.xsl}" style="${xspec.project.dir}/src/compiler/generate-xspec-tests.xsl" classpath="${saxon.jar}">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
@@ -82,12 +82,14 @@ where:
       </condition>
     </fail>
   </target>
-  <target name="echoproperties">
+  <target name="echoproperties" description="--> print out properties">
     <echoproperties/>
   </target>
-  <target name="clean" description="clean up">
-    <!-- Delete the report output directory -->
+  <target name="clean" description="--> clean up the report output directory">
     <delete dir="${xspec.dir}"/>
+  </target>
+  <target name="resolve" description="--> retrieve dependencies with ivy">
+    <ivy:retrieve />
   </target>
 </project>
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

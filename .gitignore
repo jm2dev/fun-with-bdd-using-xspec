@@ -1,3 +1,9 @@
+# readme files
 README.pdf
 README.html
+
+# xspec reports
 xspec/
+
+# ivy dependencies
+lib/

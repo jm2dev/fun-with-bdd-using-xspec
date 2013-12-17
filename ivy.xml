@@ -1,0 +1,6 @@
+<ivy-module version="2.0">
+  <info organisation="org.jm2dev" module="fun-with-bdd-using-xspec"/>
+  <dependencies>
+    <dependency org="net.sf.saxon" name="Saxon-HE" rev="9.4"/>
+  </dependencies>
+</ivy-module>

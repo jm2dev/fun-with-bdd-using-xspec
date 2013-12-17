@@ -35,6 +35,15 @@ Setup
 
 Use *xspec.properties* file to provide settings like Xspec home folder and Saxon home folder.
 
+If you don't have saxon installed, an ivy task is provided to download it for you.
+
+::
+
+   # saxon system binary
+   saxon.jar.unix=/usr/share/java/saxon.jar
+   # saxon ivy binary
+   saxon.jar.unix=./lib/Saxon-HE-9.4.jar
+
 Run
 ===
 This is the default task, just especify the specification file to process.
