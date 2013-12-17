@@ -30,6 +30,11 @@ Here are the commands to install them on Fedora_ linux 19::
     unzip xspec-0.4.0rc1.zip
     ln -s /usr/local/xspec-0.4.0rc1/bin/xspec.sh /usr/local/bin/xspec
 
+Setup
+=====
+
+Use *xspec.properties* file to provide settings like Xspec home folder and Saxon home folder.
+
 Run
 ===
 
@@ -37,7 +42,7 @@ The tutorial folder contains the files you can find in xspec tutorial, just to c
 
 ::
 
-    ant -Dxspec.xml=tutorial/escape-for-regex.xspec -Dsaxon.jar=/usr/share/java/saxon.jar -Dxspec.project.dir=/usr/local/xspec
+    ant -Dxspec.xml=tutorial/escape-for-regex.xspec
 
 .. _Java: http://openjdk.java.net/
 .. _Ant: http://ant.apache.org/
