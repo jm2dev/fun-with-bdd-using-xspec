@@ -37,12 +37,23 @@ Use *xspec.properties* file to provide settings like Xspec home folder and Saxon
 
 Run
 ===
+This is the default task, just especify the specification file to process.
 
 The tutorial folder contains the files you can find in xspec tutorial, just to check works.
 
 ::
 
     ant -Dxspec.xml=tutorial/escape-for-regex.xspec
+
+Debug
+=====
+
+There is an *echoproperties* task useful for debugging purpuoses.
+
+Clean
+=====
+
+Just run the *clean* task to delete the directory containing output reports.
 
 .. _Java: http://openjdk.java.net/
 .. _Ant: http://ant.apache.org/
