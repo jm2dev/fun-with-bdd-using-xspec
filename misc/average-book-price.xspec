@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+               xmlns:functx="http://www.functx.com"
+               stylesheet="average-book-price.xslt">
+  <x:scenario label="calculating average book price">
+    <!-- apply template rules to this element -->
+    <x:context href="./books.xml" select="/" />
+    <!-- check the result -->
+    <x:expect label="return average book price">
+       <averageBookPrice>9</averageBookPrice>
+    </x:expect>
+  </x:scenario>
+</x:description>

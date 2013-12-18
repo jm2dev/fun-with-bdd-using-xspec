@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+  <book title="Don Quijote" price="10"/>
+  <book title="Biblia" price="9"/>
+  <book title="Linux" price="8"/>
+</books>
