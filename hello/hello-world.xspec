@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+               xmlns:functx="http://www.functx.com"
+               stylesheet="hello-world.xslt">
+<x:scenario label="when processing a greeting">
+  <!-- apply template rules to this element -->
+  <x:context>
+    <greeting>Hello, world!</greeting>
+  </x:context>
+  <!-- check the result -->
+  <x:expect label="greeting is transformed into a paragraph in an html file">Hello, world!</x:expect>
+</x:scenario>
+</x:description>
