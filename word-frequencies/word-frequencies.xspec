@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+               xmlns:functx="http://www.functx.com"
+               stylesheet="word-frequencies.xslt">
+  <x:scenario label="tabulating word frequencies">
+    <!-- apply template rules to this element -->
+    <x:context href="./lipsum.xml" select="/" />
+    <!-- check the result -->
+    <x:expect label="words are counted in descending order">
+      <wordcount xmlns:pkg="http://expath.org/ns/pkg"
+                 xmlns:impl="urn:x-xspec:compile:xslt:impl"
+                 xmlns:functx="http://www.functx.com">
+        <word word="lorem" frequency="3"/>
+        <word word="ipsum" frequency="2"/>
+        <word word="dolor" frequency="1"/>
+        <word word="sit" frequency="1"/>
+        <word word="amet" frequency="1"/>
+        <word word="consectetur" frequency="1"/>
+        <word word="adipiscing" frequency="1"/>
+        <word word="elit" frequency="1"/>
+        <word word="morbi" frequency="1"/>
+        <word word="eget" frequency="1"/>
+        <word word="semper" frequency="1"/>
+        <word word="velit" frequency="1"/>
+      </wordcount>
+    </x:expect>
+  </x:scenario>
+</x:description>
