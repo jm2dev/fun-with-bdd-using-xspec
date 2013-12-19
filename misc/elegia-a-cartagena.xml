@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Elegía al puerto de Cartagena -->
+<poema>
+  <autor>Miguel de Cervantes Saavedra</autor>
+  <título>Elegía a Cartagena (Viaje al Parnaso)</título>
+  <fecha>1614</fecha>
+  <estrofa>
+    <línea>Con esto poco a poco, llegué al puerto</línea>
+    <línea>a quien los de Cartago dieron nombre,</línea>
+    <línea>cerrado a todos vientos y encurbierto.</línea>
+    <línea>A cuyo claro y sin igual renombre</línea>
+    <línea>se postran cuantos puertos el mar baña,</línea>
+    <línea>descubre el sol y ha navegado el hombre...</línea>
+  </estrofa>
+</poema>

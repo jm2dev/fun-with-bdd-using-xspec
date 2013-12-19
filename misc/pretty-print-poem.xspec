@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+               xmlns:functx="http://www.functx.com"
+               stylesheet="pretty-print-poem.xslt">
+  <x:scenario label="Poem printing">
+    <!-- apply template rules to this element -->
+    <x:context href="./elegia-a-cartagena.xml" select="/" />
+    <!-- check the result -->
+    <x:expect label="even lines indented">
+    <html xmlns:pkg="http://expath.org/ns/pkg"
+    xmlns:impl="urn:x-xspec:compile:xslt:impl"
+    xmlns:functx="http://www.functx.com">
+    <head>
+    <title>Elegía a Cartagena (Viaje al Parnaso)</title>
+    </head>
+    <body>
+    <div align="center">
+    <h1>Elegía a Cartagena (Viaje al Parnaso)</h1>
+    </div>
+    <div align="center">
+    <h2>Por Miguel de Cervantes Saavedra</h2>
+    </div>
+    <p>Con esto poco a poco, llegué al puerto<br/>&#160;&#160;a quien los de Cartago dieron nombre,<br/>cerrado a todos vientos y encurbierto.<br/>&#160;&#160;A cuyo claro y sin igual renombre<br/>se postran cuantos puertos el mar baña,<br/>&#160;&#160;descubre el sol y ha navegado el hombre...<br/></p>
+    <p><i>1614</i></p>
+    </body>
+    </html>
+    </x:expect>
+  </x:scenario>
+</x:description>
