@@ -48,6 +48,10 @@ If you don't have saxon installed, an ivy task is provided to download it for yo
    saxon.jar.unix=./lib/Saxon-HE-9.4.jar
    saxon.jar.mac=./lib/Saxon-HE-9.4.jar
 
+If you go for the second approach, run this command to get saxon library::
+
+  ant resolve
+
 Run
 ===
 This is the default task, just especify the specification file to process.
@@ -61,6 +65,8 @@ The tutorial folder contains the files you can find in xspec tutorial, just to c
 Note for MacOSX users, you need to specify ivy libraries location::
 
   ant -lib /usr/local/Cellar/ivy/2.3.0/libexec/ -Dxspec.xml=tutorial/escape-for-regex.xspec
+
+Check *build.sh* script if you don't like typing.
 
 Debug
 =====
